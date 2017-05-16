@@ -18,21 +18,13 @@ defmodule Tern.Web do
 
   def model do
     quote do
-      use Ecto.Schema
-
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
+      # Define common model functionality
     end
   end
 
   def controller do
     quote do
       use Phoenix.Controller
-
-      alias Tern.Repo
-      import Ecto
-      import Ecto.Query
 
       import Tern.Router.Helpers
       import Tern.Gettext
@@ -64,10 +56,6 @@ defmodule Tern.Web do
   def channel do
     quote do
       use Phoenix.Channel
-
-      alias Tern.Repo
-      import Ecto
-      import Ecto.Query
       import Tern.Gettext
     end
   end

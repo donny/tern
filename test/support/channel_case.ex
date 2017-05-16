@@ -20,11 +20,6 @@ defmodule Tern.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias Tern.Repo
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
-
 
       # The default endpoint for testing
       @endpoint Tern.Endpoint
@@ -32,11 +27,6 @@ defmodule Tern.ChannelCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Tern.Repo)
-
-    unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Tern.Repo, {:shared, self()})
-    end
 
     :ok
   end

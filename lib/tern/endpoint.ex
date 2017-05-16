@@ -36,7 +36,7 @@ defmodule Tern.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_tern_key",
-    signing_salt: "enCuexLo"
+    signing_salt: "lBa+PqQM"
 
   plug Tern.Router
 end

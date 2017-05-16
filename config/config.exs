@@ -5,14 +5,10 @@
 # is restricted to this project.
 use Mix.Config
 
-# General application configuration
-config :tern,
-  ecto_repos: [Tern.Repo]
-
 # Configures the endpoint
 config :tern, Tern.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "CXCp6K5EEyZIiQlW/IMtWQ7WLIKfOkvf1e+oVQGy8czvbsLjW/x1rmrKud3WYu8y",
+  secret_key_base: "6eLqPFTKKxpLK/57nKDTPkAhhE8EFPosXOwUcTuWSf6mFlF1Xw4wuR5zIzGxPbY+",
   render_errors: [view: Tern.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Tern.PubSub,
            adapter: Phoenix.PubSub.PG2]

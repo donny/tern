@@ -8,12 +8,3 @@ config :tern, Tern.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :tern, Tern.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "tern_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
