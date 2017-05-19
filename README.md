@@ -14,7 +14,7 @@ In the spirit of [programmingexcuses.com](http://programmingexcuses.com), Tern i
 
 ### Implementation
 
-Tern is implemented using Phoenix and it was bootstrapped using the following command: `mix phoenix.new tern --no-ecto`. We don't need to use a database and that's why we don't need to include [Ecto](https://github.com/elixir-ecto/ecto), which is a domain specific language for writing queries and interacting with databases in Elixir.
+Tern is implemented using Phoenix and it was bootstrapped using the following command: `mix phoenix.new tern --no-ecto`. We don't need to use a database and that's why we don't need to include [Ecto](https://github.com/elixir-ecto/ecto), which is a domain specific language for writing queries and interacting with databases in Elixir. Tern was deployed on [Heroku](http://www.phoenixframework.org/docs/heroku).
 
 We created a new [page](http://www.phoenixframework.org/docs/adding-pages) to our Phoenix application and we just pass a random string to the template:
 
@@ -37,8 +37,6 @@ defmodule Tern.PageController do
 end
 ```
 
-Tern was deployed on [Heroku](http://www.phoenixframework.org/docs/heroku).
-
 ### Conclusion
 
-...
+Using Phoenix to implement Tern is quite an overkill, we could implement it using a static web framework for example. But this gives me the chance to explore Phoenix and its project structure. Tern is an initial experiment to play with Phoenix. There are still other things that I would like to learn more: Ecto, Elixir channels, etc. In addition, I think using Elixir with Elm will be a great thing to learn.
